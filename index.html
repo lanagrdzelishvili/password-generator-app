@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,500;1,200&display=swap" rel="stylesheet">
+    <link rel="icon" href="./starter-code/assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js.js" defer></script>
+    <title>Password-Generator-App</title>
+</head>
+<body>
+    <div class="main-container">
+        <h2>Password Generator</h2>
+        <div class="password-display-container">
+            <p class="password-display">Suggested Password</p>
+            <img src="./starter-code/assets/images/icon-copy.svg" alt="icon-copy">
+        </div>
+        <div class="cont">
+            <div class="character-length">
+                <h4>Character Length</h4>
+                <p>0</p>
+            </div>
+            <div class="range">
+                <input type="range" min="4" max="18" class="slider">
+            </div>
+            <div class="ck">
+                <div class="check">
+                    <input type="checkbox" class="checkbox">
+                    <p class="texts">Include Uppercase Letters</p>
+                </div>
+                <div class="check">
+                    <input type="checkbox" class="checkbox">
+                    <p class="texts">Include Lowercase Letters</p>
+                </div>
+                <div class="check">
+                    <input type="checkbox" class="checkbox">
+                    <p class="texts">Include Numbers</p>
+                </div>
+                <div class="check">
+                    <input type="checkbox" class="checkbox">
+                    <p class="texts">Include Symbols</p>
+                </div>
+            </div>
+            <div class="strength-cont">
+                <p class="strength">Strength</p>
+                <p class="strong-change">STRONG</p>
+                <div class="strong-change-cont">
+                    <div class="colr" id="one"></div>
+                    <div class="colr" id="two"></div>
+                    <div class="colr" id="three"></div>
+                    <div class="colr" id="four"></div>
+                </div>
+            </div>
+            <div class="btn">
+                <button id="btn">Generate <svg class="myimg" width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path fill="#24232C" d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/></svg></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
